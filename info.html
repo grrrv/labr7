@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+  <link href="styles.css" rel="stylesheet">
+  <title>Лабораторная работа 6</title>
+</head>
+
+<body>
+  <nav class="navbar navbar-expand-sm bg-primary">
+    <div class="container-fluid">
+      <ul class="navbar-nav">
+        <li class="nav-item">
+          <a class="nav-link" href="./info.html">Информация об актере</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="./films.html">Список фильмов</a>
+        </li>
+      </ul>
+    </div>
+    <div>
+      <button id="collapseExample" class="btn btn-primary" type="button" data-bs-toggle="collapse"
+        data-bs-target="#collapseExample" aria-expanded="false" aria-controls="collapseExample">
+        Меню
+      </button>
+    </div>
+
+    <div class="collapse" id="collapseExample">
+      <div class="card card-body">
+
+        <ul class="navbar-nav">
+          <li class="nav-item">
+            <a class="nav-link" href="#blok1">Карусель</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#blok2">Карточки</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#blok3">Биография</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+  <div class="carousel slide carousel-fade" id="blok1" data-bs-ride="carousel">
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+        <img src="images/1.jpg" class="d-block w-100">
+      </div>
+      <div class="carousel-item">
+        <img src="images/2.jpg" class="d-block w-100">
+      </div>
+      <div class="carousel-item">
+        <img src="images/3.jpg" class="d-block w-100">
+      </div>
+    </div>
+    <button class="carousel-control-prev" type="button" data-bs-target="#blok1" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Предыдущий</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#blok1" data-bs-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Следующий</span>
+    </button>
+  </div><br>
+  <h3>Фильмы и сериалы</h3>
+  <div class="films" id="blok2">
+    <div class="card" id="card1">
+      <img src="images/4.jpg" class="card-img-top" alt="Призрачный доктор">
+      <div class="card-body">
+        <h5 class="card-title">"Призрачный доктор", 2022</h5>
+        <p class="card-text">Одарённый, но заносчивый хирург становится призраком после аварии.
+          Ему приходится заключить союз с неумелым ординатором, чтобы вселяться в его тело и лечить пациентов. </p>
+        <a href="https://www.kinopoisk.ru/series/4394779/" class="btn btn-outline-primary">Ссылка на Кинопоиск</a>
+      </div>
+    </div>
+    <div class="card" id="card1">
+      <img src="images/5.jpg" class="card-img-top" alt="История девятихвостого лиса">
+      <div class="card-body">
+        <h5 class="card-title">"История девятихвостого лиса", 2020</h5>
+        <p class="card-text">Мифический лис Ли Ён под видом современного мужчины защищает людей от опасных
+          сверхъестественных существ и одновременно разыскивает реинкарнацию своей возлюбленной, погибшей несколько
+          веков назад. </p>
+        <a href="https://www.kinopoisk.ru/series/1330171/" class="btn btn-outline-primary">Ссылка на Кинопоиск</a>
+      </div>
+    </div>
+    <div class="card" id="card1">
+      <img src="images/6.jpg" class="card-img-top" alt="Юридическая школа">
+      <div class="card-body">
+        <h5 class="card-title">"Школа права", 2021</h5>
+        <p class="card-text">Бывший прокурор Ян Джон-хун работает преподавателем в престижной школе права.
+          Он прямолинеен и склонен отпускать едкие замечания, из-за чего не особо любим студентами, но Яну нет до этого
+          никакого дела.
+          Вскоре ему и двум первокурсникам — красавчику-отличнику и девушке из бедной семьи — предстоит столкнуться с
+          беспрецедентным делом. </p>
+        <a href="https://www.kinopoisk.ru/series/1390154/" class="btn btn-outline-primary">Ссылка на Кинопоиск</a>
+      </div>
+    </div>
+    <div class="card" id="card1">
+      <img src="images/7.jpg" class="card-img-top" alt="Под прикрытием">
+      <div class="card-body">
+        <h5 class="card-title">"Под прикрытием", 2015</h5>
+        <p class="card-text">Для поимки опасных преступников формируется следственный отдел детективов под прикрытием.
+          Их методы включают прослушивание телефонных разговоров, мониторинг связей и глубокое внедрение в группировки.
+        </p>
+        <a href="https://www.kinopoisk.ru/series/918092/" class="btn btn-outline-primary">Ссылка на Кинопоиск</a>
+      </div>
+    </div>
+  </div>
+
+  <div id="blok3">
+    <p>
+      <button class="btn btn-primary" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSection3"
+        aria-expanded="false" aria-controls="collapseSection3">
+        Краткая биография
+      </button>
+    </p>
+
+    <div class="collapse" id="collapseSection3">
+      <div class="card card-body">
+        <h3>Ким Бом</h3>
+        Ким Санбом (кор. 김범, также известный как Ким Бом; род. 7 июля 1989, Сеул, Республика Корея) — южнокорейский
+        актёр, певец и модель.
+        Более известен по сериалу «Мальчики краше цветов», где он сыграл одного из четырёх главных героев дорамы — Со И
+        Чжона.
+        Также известен, как герой дорамы «История девятихвостого лиса» — Ли Ран.
+      </div>
+      <div class="card card-body">
+        <h3>Биография</h3>
+        Ким Бом родился 7 июля 1989 года в Южной Корее.
+        Его семья состоит из его матери, отца и одной младшей сестры.
+        Ещё ребёнком Ким Бом, учившийся в средней школе, превосходил своих сверстников в спортивных состязаниях.
+        В настоящее время он посещает Университет Чунан, для того чтобы продолжить обучение в Департаменте кино и
+        театра.
+        В 2006 году Ким участвовал «Survival Star Audition» и занял 6 место из сотни конкурсантов, из-за того, что ему
+        было 17 лет, а по правилу конкурса возраст участника должен был быть не менее 20 лет.
+        «Survival Star Audition» открыл множество возможностей для Ким. Он получил несколько ролей в телесериалах, и
+        выросла его популярность.
+        В 2008 году Ким Бом получил награду корейского фестиваля дорам за популярность среди пользователей Интернета.
+      </div>
+      <div class="card card-body">
+        <h3>Личная жизнь</h3>
+        1 ноября 2013 года агентство Kingkong Entertainment объявило, что Ким Бом встречается с «Богиней Огня» — Мун
+        Гынён.
+        Но спустя 7 месяцев 15 мая 2014 года они расстались.
+
+        29 марта 2018 года было подтверждено, что Ким состоит в отношениях с актрисой О Ён Со.
+        Однако после нескольких месяцев знакомства они, как сообщается, расстались
+      </div>
+    </div>
+</body>
+
+</html>
